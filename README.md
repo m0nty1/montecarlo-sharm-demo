@@ -15,4 +15,4 @@ Open `index.html` in a browser — no build step.
 ## Built with
 - Skills: Anthropic `frontend-design`, VectorLab `anti-slop`, Firecrawl (content and brand extraction from the live site)
 - Open source: [Lenis](https://github.com/darkroomengineering/lenis) smooth scroll, Google Fonts (Bodoni Moda + Figtree)
-- Plain HTML/CSS/JS in one file. All photos are the hotel's own, loaded from its current site.
+- Plain HTML/CSS/JS in one file. All photos are the hotel's own, stored in `img/`.

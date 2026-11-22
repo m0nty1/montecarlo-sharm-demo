@@ -5,12 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Monte-Carlo Sharm Resort &amp; Spa — Red Sea, Sharm El-Sheikh</title>
 <meta name="description" content="A beachfront resort on the Red Sea in Sharm El-Sheikh since 1985: 350 rooms, six restaurants, a private jetty, aqua park and the adults-only Royal wing.">
-<meta property="og:image" content="https://static.wixstatic.com/media/8be0b2_dddff434ae714874acc01337f0ca8d8e~mv2.png/v1/fill/w_1200,h_630,al_c,q_85/og.jpg">
-<link rel="icon" href="https://static.wixstatic.com/media/8be0b2_e0b2babe49764e4ea67fcd5da789233f~mv2.png/v1/fill/w_192,h_192/fav.png">
+<meta property="og:image" content="img/dddff434-2690.jpg">
+<link rel="icon" href="img/e0b2babe-75bf.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.css">
+<style>html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden}</style>
 <style>
 :root{
   --ink:#0C2B33;        /* deep reef */
@@ -73,7 +73,7 @@ h2{font-size:clamp(2.2rem,4.6vw,4rem)}
 .book form{display:grid;grid-template-columns:1.2fr 1.2fr .9fr auto;background:var(--white);color:var(--ink);border-radius:16px;overflow:hidden;box-shadow:0 20px 50px -20px rgba(0,0,0,.5)}
 .book label{display:flex;flex-direction:column;padding:14px 22px;border-right:1px solid var(--glass-2);font-size:13px;color:var(--ink-2)}
 .book input,.book select{font:inherit;font-size:16px;color:var(--ink);border:0;background:none;padding-top:2px;outline:none}
-.book .btn{border-radius:0;padding:0 34px;font-size:16px}
+.book .btn{border-radius:0;padding:0 34px;font-size:16px;justify-content:center}
 
 /* ---------- intro ---------- */
 .intro{padding:140px 0 120px}
@@ -249,7 +249,7 @@ footer{background:var(--ink);color:var(--glass-2);padding:72px 0 40px;font-size:
 
 <header class="nav" id="nav">
   <div class="wrap">
-    <a class="logo" href="#top" aria-label="Monte-Carlo Sharm, home"><img src="https://static.wixstatic.com/media/8be0b2_6f58e3fe4131416dbb7d8bb949d9f318~mv2.png/v1/crop/x_2,y_0,w_705,h_198/fill/w_246,h_66,al_c,q_90/logo.png" alt="Monte-Carlo Sharm El Sheikh" width="121" height="34"></a>
+    <a class="logo" href="#top" aria-label="Monte-Carlo Sharm, home"><img src="img/6f58e3fe-e1d9.png" alt="Monte-Carlo Sharm El Sheikh" width="121" height="34"></a>
     <ul id="menu">
       <li><a href="#rooms">Rooms</a></li>
       <li><a href="#dining">Dining</a></li>
@@ -266,19 +266,19 @@ footer{background:var(--ink);color:var(--glass-2);padding:72px 0 40px;font-size:
 <main id="main">
 <section class="hero" id="top" aria-label="Welcome">
   <div class="hero-line" aria-hidden="true"></div>
-  <div class="hero-img"><img src="https://static.wixstatic.com/media/8be0b2_dddff434ae714874acc01337f0ca8d8e~mv2.png/v1/fill/w_2200,h_1100,al_c,q_90,enc_avif,quality_auto/resort.jpg" alt="The resort at dusk: lit pools, palm gardens and the Red Sea, with the Sinai mountains behind" fetchpriority="high"></div>
+  <div class="hero-img"><img src="img/dddff434-98b5.jpg" alt="The resort at dusk: lit pools, palm gardens and the Red Sea, with the Sinai mountains behind" fetchpriority="high"></div>
   <div class="hero-copy wrap">
     <h1>Where Sinai meets the Red Sea.</h1>
     <p>A beachfront resort in Sharm El-Sheikh since 1985 — private jetty, six restaurants and 350 rooms facing the water, the pools or the gardens.</p>
   </div>
   <div class="book wrap">
-    <form action="https://www.montecarlosharm.com/booking" method="get" aria-label="Check availability">
+    <form id="bookForm" aria-label="Check availability">
       <label>Arrival<input type="date" name="checkIn" id="in" required></label>
       <label>Departure<input type="date" name="checkOut" id="out" required></label>
       <label>Guests
         <select name="adults"><option value="1">1 adult</option><option value="2" selected>2 adults</option><option value="3">3 adults</option><option value="4">Family (4+)</option></select>
       </label>
-      <button class="btn btn-gold" type="submit">Check availability</button>
+      <a class="btn btn-gold" id="bookGo" href="https://www.montecarlosharm.com/booking">Check availability</a>
     </form>
   </div>
 </section>
@@ -296,7 +296,7 @@ footer{background:var(--ink);color:var(--glass-2);padding:72px 0 40px;font-size:
       </div>
     </div>
     <figure>
-      <img src="https://static.wixstatic.com/media/8be0b2_28b35e58f8774a0488edc5cd8d2ede69~mv2.jpg/v1/fill/w_900,h_1125,al_c,q_85,enc_avif,quality_auto/reef.jpg" alt="Coral and reef fish just below the surface of the Red Sea" loading="lazy">
+      <img src="img/28b35e58-a842.jpg" alt="Coral and reef fish just below the surface of the Red Sea" loading="lazy">
       <figcaption>The house reef, a short swim from the jetty.</figcaption>
     </figure>
   </div>
@@ -337,7 +337,7 @@ footer{background:var(--ink);color:var(--glass-2);padding:72px 0 40px;font-size:
 </section>
 
 <section class="jetty" aria-label="The jetty">
-  <img data-parallax src="https://static.wixstatic.com/media/8be0b2_28b8cd775fc847feaf556dee8e1ceb40~mv2.jpeg/v1/fill/w_2000,h_1200,al_c,q_88,enc_avif,quality_auto/jetty.jpg" alt="The resort's wooden jetty stretching into the Red Sea at sunrise" loading="lazy">
+  <img data-parallax src="img/28b8cd77-aba2.jpg" alt="The resort's wooden jetty stretching into the Red Sea at sunrise" loading="lazy">
   <div class="wrap">
     <h2>The sea starts where the jetty ends.</h2>
     <p>Step off the pontoon straight onto the reef. Snorkel gear, diving trips to Ras Mohamed and Tiran, and sunrise coffee at the end of the boards.</p>
@@ -346,7 +346,7 @@ footer{background:var(--ink);color:var(--glass-2);padding:72px 0 40px;font-size:
 
 <section class="dining" id="dining" aria-labelledby="dining-h">
   <div class="wrap dining-grid">
-    <img src="https://static.wixstatic.com/media/8be0b2_c92848ac2b66466ba3b246de049b2275~mv2.jpg/v1/fill/w_900,h_1125,al_c,q_85,enc_avif,quality_auto/dining.jpg" alt="Restaurant terrace with sea views and set tables" loading="lazy">
+    <img src="img/c92848ac-b281.jpg" alt="Restaurant terrace with sea views and set tables" loading="lazy">
     <div>
       <h2 id="dining-h">Six kitchens, one evening at a time.</h2>
       <p class="lede" style="margin-top:18px">From a breakfast buffet at Le Café to grilled fish at The Waves — book à-la-carte tables at reception or from your room.</p>
@@ -365,7 +365,7 @@ footer{background:var(--ink);color:var(--glass-2);padding:72px 0 40px;font-size:
 <section class="royal" id="royal" aria-labelledby="royal-h">
   <div class="wrap royal-grid">
     <div>
-      <img class="crest" src="https://static.wixstatic.com/media/8be0b2_dadf31134add45c0bfc10c8af456be23~mv2.png/v1/fill/w_276,h_276,al_c,q_90/royal.png" alt="Royal Monte-Carlo crest" loading="lazy">
+      <img class="crest" src="img/dadf3113-cb0f.png" alt="Royal Monte-Carlo crest" loading="lazy">
       <h2 id="royal-h">Royal Monte-Carlo. Adults only.</h2>
       <p>A resort within the resort. Royal rooms sit on the sea front with only the main pool between you and the beach — and a private lounge and beach that children and day guests don't reach.</p>
       <ul>
@@ -379,8 +379,8 @@ footer{background:var(--ink);color:var(--glass-2);padding:72px 0 40px;font-size:
       <a class="btn btn-gold" href="https://www.montecarlosharm.com/booking">Book the Royal wing</a>
     </div>
     <div class="pair">
-      <img src="https://static.wixstatic.com/media/8be0b2_8bd9da66d3c34909ba14b3e299f1b919~mv2.jpg/v1/fill/w_700,h_933,al_c,q_85,enc_avif,quality_auto/royal-beach.jpg" alt="Shaded cabanas on the Royal private beach" loading="lazy">
-      <img src="https://static.wixstatic.com/media/8be0b2_845c83efaa554393b09a2de0a5d4afab~mv2.jpg/v1/fill/w_700,h_933,al_c,q_85,enc_avif,quality_auto/royal-suite.jpg" alt="Royal junior suite with a lounge and king bed" loading="lazy">
+      <img src="img/8bd9da66-24ef.jpg" alt="Shaded cabanas on the Royal private beach" loading="lazy">
+      <img src="img/845c83ef-8cca.jpg" alt="Royal junior suite with a lounge and king bed" loading="lazy">
     </div>
   </div>
 </section>
@@ -389,10 +389,10 @@ footer{background:var(--ink);color:var(--glass-2);padding:72px 0 40px;font-size:
   <div class="wrap">
     <h2 id="amen-h">Slow days, if you want them.</h2>
     <div class="amen-grid">
-      <div class="tile wide"><img src="https://static.wixstatic.com/media/8be0b2_2750a177c7d64bd795cfa8654e09e59b~mv2.jpeg/v1/fill/w_1400,h_700,al_c,q_85,enc_avif,quality_auto/aqua.jpg" alt="Aerial view of the aqua park slides, pyramid pool and lazy river" loading="lazy"><div><h3>Aqua park &amp; lazy river</h3><p>Slides, the Pyramids pool and a river that loops the gardens.</p></div></div>
-      <div class="tile"><img src="https://static.wixstatic.com/media/8be0b2_0f64fa1483b840c4a627a0c24f4dccbf~mv2.jpg/v1/fill/w_700,h_700,al_c,q_85,enc_avif,quality_auto/spa.jpg" alt="Hot-stone massage at the spa" loading="lazy"><div><h3>Spa</h3><p>Massage, hammam and hot-stone treatments.</p></div></div>
-      <div class="tile"><img src="https://static.wixstatic.com/media/8be0b2_6fae2bca72d94d7aaea8014476569f7f~mv2.png/v1/fill/w_700,h_700,al_c,q_85,enc_avif,quality_auto/events.jpg" alt="Bride holding a bouquet of roses" loading="lazy"><div><h3>Weddings &amp; events</h3><p>Beach ceremonies and meeting rooms.</p></div></div>
-      <div class="tile wide"><img src="https://static.wixstatic.com/media/8be0b2_dddff434ae714874acc01337f0ca8d8e~mv2.png/v1/fill/w_1400,h_700,al_c,q_85,enc_avif,quality_auto/pools.jpg" alt="Pools lit up at dusk across the resort" loading="lazy"><div><h3>Pools after dark</h3><p>Outdoor pools across the grounds, lit through the evening.</p></div></div>
+      <div class="tile wide"><img src="img/2750a177-4cf6.jpg" alt="Aerial view of the aqua park slides, pyramid pool and lazy river" loading="lazy"><div><h3>Aqua park &amp; lazy river</h3><p>Slides, the Pyramids pool and a river that loops the gardens.</p></div></div>
+      <div class="tile"><img src="img/0f64fa14-80f2.jpg" alt="Hot-stone massage at the spa" loading="lazy"><div><h3>Spa</h3><p>Massage, hammam and hot-stone treatments.</p></div></div>
+      <div class="tile"><img src="img/6fae2bca-06d4.jpg" alt="Bride holding a bouquet of roses" loading="lazy"><div><h3>Weddings &amp; events</h3><p>Beach ceremonies and meeting rooms.</p></div></div>
+      <div class="tile wide"><img src="img/dddff434-9249.jpg" alt="Pools lit up at dusk across the resort" loading="lazy"><div><h3>Pools after dark</h3><p>Outdoor pools across the grounds, lit through the evening.</p></div></div>
     </div>
     <p class="also">Also on site: fitness centre, supermarket, clinic, free parking and high-speed Wi-Fi throughout.</p>
   </div>
@@ -413,10 +413,10 @@ footer{background:var(--ink);color:var(--glass-2);padding:72px 0 40px;font-size:
     <h2 id="sharm-h">Beyond the gate.</h2>
     <p class="lede" style="margin-top:14px">Desert on one side, reef on the other. Reception books every trip.</p>
     <div class="sharm-grid">
-      <figure><img src="https://static.wixstatic.com/media/8be0b2_c5fa0aea21f04c04b8c08d3d64e9accc~mv2.jpg/v1/fill/w_600,h_800,al_c,q_85,enc_avif,quality_auto/rasmohamed.jpg" alt="Clear turquoise lagoon at Ras Mohamed" loading="lazy"><figcaption>Ras Mohamed National Park</figcaption></figure>
-      <figure><img src="https://static.wixstatic.com/media/8be0b2_cda302c6412d4648a4af01b124f929af~mv2.jpeg/v1/fill/w_600,h_800,al_c,q_85,enc_avif,quality_auto/quad.jpg" alt="Quad bikes crossing the Sinai desert" loading="lazy"><figcaption>Quad safari in the Sinai</figcaption></figure>
-      <figure><img src="https://static.wixstatic.com/media/8be0b2_dfb3bca08f5a48d49fa9be5f3037c3c1~mv2.jpg/v1/fill/w_600,h_800,al_c,q_85,enc_avif,quality_auto/camels.jpg" alt="Camel trek through red sandstone canyons" loading="lazy"><figcaption>Camel trekking</figcaption></figure>
-      <figure><img src="https://static.wixstatic.com/media/8be0b2_28b35e58f8774a0488edc5cd8d2ede69~mv2.jpg/v1/fill/w_600,h_800,al_c,q_85,enc_avif,quality_auto/diving.jpg" alt="Divers over a coral reef" loading="lazy"><figcaption>Diving at Tiran</figcaption></figure>
+      <figure><img src="img/c5fa0aea-a81f.jpg" alt="Clear turquoise lagoon at Ras Mohamed" loading="lazy"><figcaption>Ras Mohamed National Park</figcaption></figure>
+      <figure><img src="img/cda302c6-bdf6.jpg" alt="Quad bikes crossing the Sinai desert" loading="lazy"><figcaption>Quad safari in the Sinai</figcaption></figure>
+      <figure><img src="img/dfb3bca0-434e.jpg" alt="Camel trek through red sandstone canyons" loading="lazy"><figcaption>Camel trekking</figcaption></figure>
+      <figure><img src="img/28b35e58-0e9c.jpg" alt="Divers over a coral reef" loading="lazy"><figcaption>Diving at Tiran</figcaption></figure>
     </div>
   </div>
 </section>
@@ -433,7 +433,7 @@ footer{background:var(--ink);color:var(--glass-2);padding:72px 0 40px;font-size:
   <div class="wrap">
     <div class="foot">
       <div>
-        <img src="https://static.wixstatic.com/media/8be0b2_6f58e3fe4131416dbb7d8bb949d9f318~mv2.png/v1/crop/x_2,y_0,w_705,h_198/fill/w_246,h_66,al_c,q_90/logo.png" alt="Monte-Carlo Sharm" width="128" height="36">
+        <img src="img/6f58e3fe-e1d9.png" alt="Monte-Carlo Sharm" width="128" height="36">
         <p>Monte-Carlo Sharm Resort &amp; Spa<br>Om El Seed, Sharm El-Sheikh, South Sinai, Egypt</p>
       </div>
       <div><h4>Reservations</h4><a href="tel:+201212221919">+20 12 1222 1919</a><a href="tel:+201273889922">+20 12 7388 9922</a><a href="mailto:reservations@montecarlosharm.com">reservations@montecarlosharm.com</a></div>
@@ -448,7 +448,7 @@ footer{background:var(--ink);color:var(--glass-2);padding:72px 0 40px;font-size:
 
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
 <script>
-const W = (id,w,h)=>`https://static.wixstatic.com/media/${id}/v1/fill/w_${w},h_${h},al_c,q_85,enc_avif,quality_auto/room.jpg`;
+const W = (id)=>`img/room-${id.split('_')[1].slice(0,8)}.jpg`;
 const STD = ["Private balcony","King or 2 queen beds","Tea & coffee station","In-room safe","Satellite TV","Bathrobes","Bath & separate shower"];
 const ROOMS = [
  {n:"Superior Sea View",t:["sea"],size:"50 m²",cap:"Up to 3 guests",img:"8be0b2_7c28db4adb884e5195d9c1b9864fca2c~mv2.jpg",
@@ -520,6 +520,9 @@ const inp=document.getElementById('in'), out=document.getElementById('out');
 inp.value=iso(d); inp.min=iso(new Date()); out.value=iso(o); out.min=iso(d);
 inp.addEventListener('change',()=>{const a=new Date(inp.value);a.setDate(a.getDate()+1);out.min=iso(a);if(out.value<=inp.value)out.value=iso(a)});
 
+const go=document.getElementById('bookGo'), form=document.getElementById('bookForm');
+function syncBook(){go.href='https://www.montecarlosharm.com/booking?'+new URLSearchParams(new FormData(form)).toString()}
+form.addEventListener('input',syncBook); form.addEventListener('change',syncBook); syncBook();
 // nav, menu, mobile book
 const nav=document.getElementById('nav'), mb=document.getElementById('mobileBook');
 const tg=document.querySelector('.menu-toggle'), menu=document.getElementById('menu');
